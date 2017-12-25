@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GaraOto.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,10 +20,19 @@ namespace GaraOto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            HomePage fHP = new HomePage();
-            this.Hide();
-            fHP.ShowDialog();
-            this.Show();
+            string username = txtTaiKhoan.Text;
+            string password = txtMatKhau.Text;
+
+            if (AccountDAO.Instance.Login(username, password)){
+                HomePage fHP = new HomePage();
+                this.Hide();
+                fHP.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

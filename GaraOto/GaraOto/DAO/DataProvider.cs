@@ -18,10 +18,11 @@ namespace GaraOto.DAO
         {
             get
             {
-                return instance;
+                if (instance == null) { instance = new DataProvider(); }
+                return DataProvider.instance;
             }
 
-            set
+            private set
             {
                 instance = value;
             }
