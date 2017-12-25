@@ -99,6 +99,7 @@
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Location = new System.Drawing.Point(208, 150);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(137, 24);
@@ -118,17 +119,19 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             // 
-            // Form1
+            // fLogin
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(389, 191);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
