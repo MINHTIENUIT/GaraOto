@@ -37,6 +37,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtgvTìmKiem = new System.Windows.Forms.DataGridView();
+            this.BIENSO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HIEUXE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENCHUXE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIENTHOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYTIEPNHAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TIENNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbDate = new System.Windows.Forms.TextBox();
             this.txbHieuXe = new System.Windows.Forms.TextBox();
@@ -67,14 +75,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.dtgvPSuaChua = new System.Windows.Forms.DataGridView();
             this.label14 = new System.Windows.Forms.Label();
-            this.BIENSO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HIEUXE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENCHUXE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DIACHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DIENTHOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NGAYTIEPNHAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TIENNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTìmKiem)).BeginInit();
@@ -182,6 +182,62 @@
             this.dtgvTìmKiem.Name = "dtgvTìmKiem";
             this.dtgvTìmKiem.Size = new System.Drawing.Size(706, 124);
             this.dtgvTìmKiem.TabIndex = 0;
+            this.dtgvTìmKiem.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvTìmKiem_CellClick);
+            // 
+            // BIENSO
+            // 
+            this.BIENSO.DataPropertyName = "BIENSO";
+            this.BIENSO.HeaderText = "Biển số";
+            this.BIENSO.Name = "BIENSO";
+            this.BIENSO.ReadOnly = true;
+            // 
+            // HIEUXE
+            // 
+            this.HIEUXE.DataPropertyName = "HIEUXE";
+            this.HIEUXE.HeaderText = "Hiệu xe";
+            this.HIEUXE.Name = "HIEUXE";
+            this.HIEUXE.ReadOnly = true;
+            // 
+            // TENCHUXE
+            // 
+            this.TENCHUXE.DataPropertyName = "TENCHUXE";
+            this.TENCHUXE.HeaderText = "Chủ Xe";
+            this.TENCHUXE.Name = "TENCHUXE";
+            this.TENCHUXE.ReadOnly = true;
+            // 
+            // DIACHI
+            // 
+            this.DIACHI.DataPropertyName = "DIACHI";
+            this.DIACHI.HeaderText = "Địa chỉ";
+            this.DIACHI.Name = "DIACHI";
+            // 
+            // DIENTHOAI
+            // 
+            this.DIENTHOAI.DataPropertyName = "DIENTHOAI";
+            this.DIENTHOAI.HeaderText = "Điện Thoại";
+            this.DIENTHOAI.Name = "DIENTHOAI";
+            this.DIENTHOAI.ReadOnly = true;
+            // 
+            // EMAIL
+            // 
+            this.EMAIL.DataPropertyName = "EMAIL";
+            this.EMAIL.HeaderText = "Email";
+            this.EMAIL.Name = "EMAIL";
+            this.EMAIL.ReadOnly = true;
+            // 
+            // NGAYTIEPNHAN
+            // 
+            this.NGAYTIEPNHAN.DataPropertyName = "NGAYTIEPNHAN";
+            this.NGAYTIEPNHAN.HeaderText = "Ngày tiếp nhận";
+            this.NGAYTIEPNHAN.Name = "NGAYTIEPNHAN";
+            this.NGAYTIEPNHAN.ReadOnly = true;
+            // 
+            // TIENNO
+            // 
+            this.TIENNO.DataPropertyName = "TIENNO";
+            this.TIENNO.HeaderText = "Tiền nợ";
+            this.TIENNO.Name = "TIENNO";
+            this.TIENNO.ReadOnly = true;
             // 
             // panel3
             // 
@@ -462,61 +518,6 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Chi tiết phiếu sửa chữa";
             // 
-            // BIENSO
-            // 
-            this.BIENSO.DataPropertyName = "BIENSO";
-            this.BIENSO.HeaderText = "Biển số";
-            this.BIENSO.Name = "BIENSO";
-            this.BIENSO.ReadOnly = true;
-            // 
-            // HIEUXE
-            // 
-            this.HIEUXE.DataPropertyName = "HIEUXE";
-            this.HIEUXE.HeaderText = "Hiệu xe";
-            this.HIEUXE.Name = "HIEUXE";
-            this.HIEUXE.ReadOnly = true;
-            // 
-            // TENCHUXE
-            // 
-            this.TENCHUXE.DataPropertyName = "TENCHUXE";
-            this.TENCHUXE.HeaderText = "Chủ Xe";
-            this.TENCHUXE.Name = "TENCHUXE";
-            this.TENCHUXE.ReadOnly = true;
-            // 
-            // DIACHI
-            // 
-            this.DIACHI.DataPropertyName = "DIACHI";
-            this.DIACHI.HeaderText = "Địa chỉ";
-            this.DIACHI.Name = "DIACHI";
-            // 
-            // DIENTHOAI
-            // 
-            this.DIENTHOAI.DataPropertyName = "DIENTHOAI";
-            this.DIENTHOAI.HeaderText = "Điện Thoại";
-            this.DIENTHOAI.Name = "DIENTHOAI";
-            this.DIENTHOAI.ReadOnly = true;
-            // 
-            // EMAIL
-            // 
-            this.EMAIL.DataPropertyName = "EMAIL";
-            this.EMAIL.HeaderText = "Email";
-            this.EMAIL.Name = "EMAIL";
-            this.EMAIL.ReadOnly = true;
-            // 
-            // NGAYTIEPNHAN
-            // 
-            this.NGAYTIEPNHAN.DataPropertyName = "NGAYTIEPNHAN";
-            this.NGAYTIEPNHAN.HeaderText = "Ngày tiếp nhận";
-            this.NGAYTIEPNHAN.Name = "NGAYTIEPNHAN";
-            this.NGAYTIEPNHAN.ReadOnly = true;
-            // 
-            // TIENNO
-            // 
-            this.TIENNO.DataPropertyName = "TIENNO";
-            this.TIENNO.HeaderText = "Tiền nợ";
-            this.TIENNO.Name = "TIENNO";
-            this.TIENNO.ReadOnly = true;
-            // 
             // fTimKiem
             // 
             this.AcceptButton = this.btnTim;
@@ -536,7 +537,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm Kiếm";
-            this.Load += new System.EventHandler(this.fTimKiem_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
