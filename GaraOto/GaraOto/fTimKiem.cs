@@ -18,17 +18,25 @@ namespace GaraOto
             InitializeComponent();
         }
 
+        public void loadListXe()
+        {
+            dtgvTìmKiem.DataSource = XeDAO.Instance.getListXe();
+        }
+
         private void btnTim_Click(object sender, EventArgs e)
         {
             if (rbTheoBS.Checked)
             {
                 dtgvTìmKiem.DataSource = XeDAO.Instance.getListXeByBienSo(txbTimKiem.Text);
-            }
-            
-            if (rbTheoTen.Checked)
+            }else
             {
-                dtgvTìmKiem.DataSource = XeDAO.Instance.getListXeByChuXe(txbTimKiem.Text);
-            }
+                dtgvTìmKiem.DataSource = XeDAO.Instance.getListXeByChuXe(txbTimKiem.Text);                
+            }                       
+        }
+
+        private void fTimKiem_Load(object sender, EventArgs e)
+        {
+            loadListXe();
         }
     }
 }

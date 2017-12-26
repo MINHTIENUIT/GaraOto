@@ -38,8 +38,13 @@ namespace GaraOto.DAO
 
         public DataTable getListXeByChuXe(string name)
         {
-            string querySTR = "GetListXeByBienSo @TENCHUXE";
+            string querySTR = "GetListXeByChuXe @TENCHUXE";
             return DataProvider.Instance.ExecuteQuery(querySTR, new object[] { name });
+        }
+
+        public DataTable getListXe() {
+            string querySTR = "GETLISTXE";
+            return DataProvider.Instance.ExecuteQuery(querySTR, null);
         }
     }
 
