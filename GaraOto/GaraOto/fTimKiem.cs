@@ -37,6 +37,17 @@ namespace GaraOto
         private void fTimKiem_Load(object sender, EventArgs e)
         {
             loadListXe();
+            addBindingXE();
+        }
+        private void addBindingXE() {
+            txbBienSo.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "BIENSO"));
+            txbChuXe.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "TENCHUXE"));
+            txbDate.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "NGAYTIEPNHAN"));
+            txbDienThoai.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "DIENTHOAI"));
+            txbEmail.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "EMAIL"));
+            txbHieuXe.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "HIEUXE"));
+            txbTienNo.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "TIENNO"));
+            rtbDiaChi.DataBindings.Add(new Binding("Text", dtgvTìmKiem.DataSource, "DIACHI"));
         }
     }
 }
