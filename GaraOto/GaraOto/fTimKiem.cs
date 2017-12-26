@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GaraOto.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace GaraOto
         public fTimKiem()
         {
             InitializeComponent();
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            if (rbTheoBS.Checked)
+            {
+                dtgvTìmKiem.DataSource = XeDAO.Instance.getListXeByBienSo(txbTimKiem.Text);
+            }
+            
+            if (rbTheoTen.Checked)
+            {
+                dtgvTìmKiem.DataSource = XeDAO.Instance.getListXeByChuXe(txbTimKiem.Text);
+            }
         }
     }
 }
