@@ -17,40 +17,20 @@ namespace GaraOto
             InitializeComponent();
         }
 
-        private void btnTiepNhan_Click(object sender, EventArgs e)
+        private void btnTiepNhanXe_Click(object sender, EventArgs e)
         {
-            pnlPage.Controls.Clear();
-            fTiepNhanXe f = new fTiepNhanXe();
-            f.TopLevel = false;
-            pnlPage.Controls.Add(f);
-            f.Show();
-        }
-
-        private void btnSuaChua_Click(object sender, EventArgs e)
-        {
-            pnlPage.Controls.Clear();
-            fPhieuSuaChua f = new fPhieuSuaChua();
-            f.TopLevel = false;
-            pnlPage.Controls.Add(f);
-            f.Show();
-        }
-
-        private void btnThuTien_Click(object sender, EventArgs e)
-        {
-            pnlPage.Controls.Clear();
-            fPhieuThuTien f = new fPhieuThuTien();
-            f.TopLevel = false;
-            pnlPage.Controls.Add(f);
-            f.Show();
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            pnlPage.Controls.Clear();
-            fTimKiem f = new fTimKiem();
-            f.TopLevel = false;
-            pnlPage.Controls.Add(f);
-            f.Show();
+            tbBienSo.Clear();
+            tbBienSo.Enabled = true;
+            tbChuXe.Clear();
+            tbChuXe.Enabled = true;
+            tbEmail.Clear();
+            tbEmail.Enabled = true;
+            txbDiaChi.Clear();
+            txbDiaChi.Enabled = true;
+            txbDienThoai.Clear();
+            txbDienThoai.Enabled = true;
+            cbHieuXe.Enabled = true;
+            dtpNgayTiepNhan.Value = DateTime.Now;
         }
     }
 }
