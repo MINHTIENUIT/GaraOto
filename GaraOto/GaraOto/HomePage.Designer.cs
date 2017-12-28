@@ -81,14 +81,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dgvXe = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTim = new System.Windows.Forms.Button();
             this.rbBienSo = new System.Windows.Forms.RadioButton();
             this.rbName = new System.Windows.Forms.RadioButton();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
-            this.BIENSO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -102,7 +100,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvPSC)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -355,7 +352,6 @@
             this.tabPage2.Controls.Add(this.btnSuaThongTin);
             this.tabPage2.Controls.Add(this.btnTiepNhanXe);
             this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.dgvXe);
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -670,19 +666,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Thông tin chủ xe";
             // 
-            // dgvXe
-            // 
-            this.dgvXe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvXe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BIENSO});
-            this.dgvXe.Location = new System.Drawing.Point(3, 115);
-            this.dgvXe.MultiSelect = false;
-            this.dgvXe.Name = "dgvXe";
-            this.dgvXe.ReadOnly = true;
-            this.dgvXe.Size = new System.Drawing.Size(1353, 163);
-            this.dgvXe.TabIndex = 1;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -744,14 +727,6 @@
             this.tbTimKiem.Size = new System.Drawing.Size(296, 20);
             this.tbTimKiem.TabIndex = 0;
             // 
-            // BIENSO
-            // 
-            this.BIENSO.DataPropertyName = "BIENSO";
-            this.BIENSO.HeaderText = "Biển Số";
-            this.BIENSO.Name = "BIENSO";
-            this.BIENSO.ReadOnly = true;
-            this.BIENSO.Visible = false;
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -763,6 +738,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.HomePage_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -780,7 +756,6 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvXe)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -814,7 +789,6 @@
         private System.Windows.Forms.RadioButton rbName;
         private System.Windows.Forms.TextBox tbTimKiem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvXe;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLapPTT;
@@ -846,6 +820,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BIENSO;
     }
 }

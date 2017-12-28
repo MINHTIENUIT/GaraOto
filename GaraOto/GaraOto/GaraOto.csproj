@@ -47,10 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\conection.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\HieuXeDAO.cs" />
     <Compile Include="DAO\PhieuThuTienDAO.cs" />
     <Compile Include="DAO\XeDAO.cs" />
+    <Compile Include="DAO\XeMod.cs" />
+    <Compile Include="DTO\XeCtrl.cs" />
     <Compile Include="DTO\XeDTO.cs" />
     <Compile Include="fHieuXe.cs">
       <SubType>Form</SubType>
