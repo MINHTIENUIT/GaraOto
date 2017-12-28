@@ -12,7 +12,7 @@ namespace GaraOto.DAO
     {
         private static DataProvider instance;
         //Insert data connection from sql to connectionSTR;
-        private string connectionSTR = @"Data Source=MINHTIEN\SQLEXPRESS;Initial Catalog=QLGR;Integrated Security=True";
+        private string connectionSTR = @"Data Source=LETHUAN-PC\LETHUAN;Initial Catalog=QLGR;Integrated Security=True";
 
         internal static DataProvider Instance
         {

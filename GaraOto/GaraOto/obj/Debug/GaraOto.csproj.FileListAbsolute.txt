@@ -12,3 +12,17 @@ C:\Users\Minh Tien\documents\visual studio 2015\Projects\GaraOto\GaraOto\obj\Deb
 C:\Users\Minh Tien\documents\visual studio 2015\Projects\GaraOto\GaraOto\obj\Debug\GaraOto.fPhieuSuaChua.resources
 C:\Users\Minh Tien\documents\visual studio 2015\Projects\GaraOto\GaraOto\obj\Debug\GaraOto.fTimKiem.resources
 C:\Users\Minh Tien\documents\visual studio 2015\Projects\GaraOto\GaraOto\obj\Debug\GaraOto.fPhieuThuTien.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\bin\Debug\GaraOto.exe.config
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\bin\Debug\GaraOto.exe
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\bin\Debug\GaraOto.pdb
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fLogin.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fTimKiem.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fPhieuSuaChua.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fPhieuThuTien.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fTiepNhanXe.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.HomePage.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.Properties.Resources.resources
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.csproj.GenerateResource.Cache
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.exe
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.pdb
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.csprojResolveAssemblyReference.cache

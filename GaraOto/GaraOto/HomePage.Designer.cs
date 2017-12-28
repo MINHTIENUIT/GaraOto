@@ -88,7 +88,7 @@
             this.rbBienSo = new System.Windows.Forms.RadioButton();
             this.rbName = new System.Windows.Forms.RadioButton();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
-            this.BIENSO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDS = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -551,6 +551,7 @@
             this.btnXoa.Text = "Xóa Xe";
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSuaThongTin
             // 
@@ -674,8 +675,6 @@
             // 
             this.dgvXe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvXe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BIENSO});
             this.dgvXe.Location = new System.Drawing.Point(3, 115);
             this.dgvXe.MultiSelect = false;
             this.dgvXe.Name = "dgvXe";
@@ -686,14 +685,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.btnDS);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnTim);
             this.panel1.Controls.Add(this.rbBienSo);
             this.panel1.Controls.Add(this.rbName);
             this.panel1.Controls.Add(this.tbTimKiem);
-            this.panel1.Location = new System.Drawing.Point(3, 5);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1353, 104);
+            this.panel1.Size = new System.Drawing.Size(1356, 104);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -708,12 +709,13 @@
             // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(621, 76);
+            this.btnTim.Location = new System.Drawing.Point(580, 76);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(75, 23);
             this.btnTim.TabIndex = 3;
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // rbBienSo
             // 
@@ -729,6 +731,7 @@
             // rbName
             // 
             this.rbName.AutoSize = true;
+            this.rbName.Checked = true;
             this.rbName.Location = new System.Drawing.Point(552, 53);
             this.rbName.Name = "rbName";
             this.rbName.Size = new System.Drawing.Size(84, 17);
@@ -744,13 +747,15 @@
             this.tbTimKiem.Size = new System.Drawing.Size(296, 20);
             this.tbTimKiem.TabIndex = 0;
             // 
-            // BIENSO
+            // btnDS
             // 
-            this.BIENSO.DataPropertyName = "BIENSO";
-            this.BIENSO.HeaderText = "Biển Số";
-            this.BIENSO.Name = "BIENSO";
-            this.BIENSO.ReadOnly = true;
-            this.BIENSO.Visible = false;
+            this.btnDS.Location = new System.Drawing.Point(661, 76);
+            this.btnDS.Name = "btnDS";
+            this.btnDS.Size = new System.Drawing.Size(75, 23);
+            this.btnDS.TabIndex = 5;
+            this.btnDS.Text = "Danh sách";
+            this.btnDS.UseVisualStyleBackColor = true;
+            this.btnDS.Click += new System.EventHandler(this.btnDS_Click);
             // 
             // HomePage
             // 
@@ -763,6 +768,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.HomePage_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -846,6 +852,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BIENSO;
+        private System.Windows.Forms.Button btnDS;
     }
 }
