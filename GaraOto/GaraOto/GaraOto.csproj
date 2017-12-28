@@ -49,11 +49,18 @@
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\conection.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HieuXeDAO.cs" />
     <Compile Include="DAO\PhieuThuTienDAO.cs" />
     <Compile Include="DAO\XeDAO.cs" />
     <Compile Include="DAO\XeMod.cs" />
     <Compile Include="DTO\XeCtrl.cs" />
     <Compile Include="DTO\XeDTO.cs" />
+    <Compile Include="fHieuXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHieuXe.Designer.cs">
+      <DependentUpon>fHieuXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +99,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fHieuXe.resx">
+      <DependentUpon>fHieuXe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>

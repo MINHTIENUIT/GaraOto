@@ -13,10 +13,10 @@ namespace GaraOto
 {
     public partial class HomePage : Form
     {
-        BindingSource listXe = new BindingSource();
         public HomePage()
         {
             InitializeComponent();
+<<<<<<< HEAD
         }
 
         int flag = 0;
@@ -89,16 +89,32 @@ namespace GaraOto
             flag = 0;
             clearData();
             dis_end(true);
+=======
+          
+        }
+
+        
+
+        
+        private void btnTiepNhanXe_Click(object sender, EventArgs e)
+        {
+            
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         private void btnSuaThongTin_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             flag = 1;
             dis_end(true);
+=======
+            
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
           
             string _BienSo = "";
             try
@@ -215,10 +231,15 @@ namespace GaraOto
                 HomePage_Load(sender, e);
             }
             else return;
+=======
+            
+            
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (rbBienSo.Checked)
             {
                 listXe.DataSource = XeDAO.Instance.getListXeByBienSo(tbTimKiem.Text);
@@ -232,6 +253,14 @@ namespace GaraOto
         private void btnDS_Click(object sender, EventArgs e)
         {
             listXe.DataSource = XeDAO.Instance.getListXe();
+=======
+            
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
     }
 }

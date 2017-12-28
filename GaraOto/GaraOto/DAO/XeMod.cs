@@ -39,26 +39,50 @@ namespace GaraOto.DAO
 
         public int InsertXe()
         {
+<<<<<<< HEAD
             object[] values = new object[7] { BienSo, TenChuXe, HieuXe, DiaChi,  DienThoai , Email,NgayTiepNhan };
             string querry = "THEMXE @BIENSO , @TENCX , @HIEUXE , @DIACHI , @DIENTHOAI , @EMAIL , @NGAYTN";
             DataTable numrow = DAO.DataProvider.Instance.ExecuteQuery(querry, values);
             return(int)numrow.Rows[0].ItemArray[0];
+=======
+            int i = 0;
+            string[] paras = new string[7] { "@BIENSO", "@TENCX", "@HIEUXE", "@DIACHI", "@DIENTHOAI", "@EMAIL", "@NGAYTN" };
+            object[] values = new object[7] { BienSo, TenChuXe, HieuXe, DiaChi, DienThoai, Email, NgayTiepNhan };
+            i = DAO.conection.Excute_Sql("THEMXE", CommandType.StoredProcedure, paras, values);
+            return i;
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         public int UpdateXe()
         {
+<<<<<<< HEAD
             object[] values = new object[7] { BienSo, TenChuXe, HieuXe, DiaChi, DienThoai, Email, NgayTiepNhan };
             string querry = "SUATTXE @BIENSO , @TENCX , @DIACHI , @DIENTHOAI , @EMAIL";
             DataTable numrow = DAO.DataProvider.Instance.ExecuteQuery(querry, values);
             return (int)numrow.Rows[0].ItemArray[0];
+=======
+            int i = 0;
+            string[] paras = new string[5] { "@BIENSO", "@TENCX", "@DIACHI", "@DIENTHOAI", "@EMAIL" };
+            object[] values = new object[5] { BienSo, TenChuXe, DiaChi, DienThoai, Email };
+            i = DAO.conection.Excute_Sql("SUATTXE", CommandType.StoredProcedure, paras, values);
+            return i;
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         public int DeleteXe()
         {
+<<<<<<< HEAD
             object[] values = new object[1] {BienSo};
             string querry = "XOAXE @BIENSO";
             DataTable numrow = DAO.DataProvider.Instance.ExecuteQuery(querry, values);
             return (int)numrow.Rows[0].ItemArray[0];
+=======
+            int i = 0;
+            string[] paras = new string[1] { "@BIENSO" };
+            object[] values = new object[1] { BienSo };
+            i = DAO.conection.Excute_Sql("XOAXE", CommandType.StoredProcedure, paras, values);
+            return i;
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         public static DataSet FillDataSetXe()

@@ -15,6 +15,11 @@ C:\Users\Minh Tien\documents\visual studio 2015\Projects\GaraOto\GaraOto\obj\Deb
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\bin\Debug\GaraOto.exe.config
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\bin\Debug\GaraOto.exe
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\bin\Debug\GaraOto.pdb
+<<<<<<< HEAD
+=======
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.csprojResolveAssemblyReference.cache
+C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fHieuXe.resources
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fLogin.resources
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fTimKiem.resources
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.fPhieuSuaChua.resources
@@ -25,4 +30,7 @@ C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.Prop
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.csproj.GenerateResource.Cache
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.exe
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.pdb
+<<<<<<< HEAD
 C:\Users\LeThuan\Documents\GitHub\GaraOto\GaraOto\GaraOto\obj\Debug\GaraOto.csprojResolveAssemblyReference.cache
+=======
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
