@@ -88,7 +88,10 @@
             this.rbName = new System.Windows.Forms.RadioButton();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnDS = new System.Windows.Forms.Button();
+=======
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
 =======
 >>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
             this.tabControl1.SuspendLayout();
@@ -672,6 +675,7 @@
             this.label4.Text = "Thông tin chủ xe";
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // dgvXe
             // 
             this.dgvXe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -683,6 +687,8 @@
             this.dgvXe.Size = new System.Drawing.Size(1353, 163);
             this.dgvXe.TabIndex = 1;
             // 
+=======
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
 =======
 >>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
             // panel1
@@ -751,6 +757,7 @@
             this.tbTimKiem.TabIndex = 0;
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // btnDS
             // 
             this.btnDS.Location = new System.Drawing.Point(661, 76);
@@ -761,6 +768,8 @@
             this.btnDS.UseVisualStyleBackColor = true;
             this.btnDS.Click += new System.EventHandler(this.btnDS_Click);
             // 
+=======
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
 =======
 >>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
             // HomePage
@@ -857,7 +866,10 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnDS;
+=======
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
 =======
 >>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
     }

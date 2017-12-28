@@ -17,6 +17,7 @@ namespace GaraOto
         {
             InitializeComponent();
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
 
         int flag = 0;
@@ -100,13 +101,28 @@ namespace GaraOto
         {
             
 >>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
+=======
+          
+        }
+
+        
+
+        
+        private void btnTiepNhanXe_Click(object sender, EventArgs e)
+        {
+            
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         private void btnSuaThongTin_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             flag = 1;
             dis_end(true);
+=======
+            
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
 =======
             
 >>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
@@ -114,6 +130,7 @@ namespace GaraOto
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
           
             string _BienSo = "";
@@ -200,10 +217,15 @@ namespace GaraOto
                 }
             }
             HomePage_Load(sender, e);
+=======
+            
+            
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             HomePage_Load(sender, e);
             dis_end(false);
         }
@@ -254,12 +276,17 @@ namespace GaraOto
         {
             listXe.DataSource = XeDAO.Instance.getListXe();
 =======
+=======
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
             
         }
 
         private void HomePage_Load(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
+>>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
+=======
 >>>>>>> be6d162fb47bea76a99a489f3707ce215245c5a2
         }
     }
